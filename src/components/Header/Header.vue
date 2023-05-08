@@ -15,7 +15,7 @@ const onLogout = async () => {
     await userStore.setMe(null);
     $toast.success('¡Sesión cerrada!');
     setTimeout(() => {
-        location.reload();
+        navigateTo('/users/me/login');
     }, 1500);
 };
 

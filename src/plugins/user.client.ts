@@ -6,16 +6,19 @@ export default defineNuxtPlugin(async () => {
     let token = await $directus.auth.token;
     const userStore = useUserStore();
 
+    var authenticated = false;
+
     if (token) {
         const user: User = ((await $directus.users.me.read()) as User) || null;
         userStore.setMe(user);
+        authenticated = true;
     } else if (!token) userStore.setMe(null);
 
     setInterval(async () => {
         token = await $directus.auth.token;
-        if (!token) {
+        if (authenticated && !token) {
             userStore.setMe(null);
-            location.reload();
+            await navigateTo('/users/me/login');
         }
     }, 30000);
 });
