@@ -6,6 +6,6 @@ export default defineNuxtRouteMiddleware(async (to) => {
 
     if (!user) {
         useState<string>('goTo', () => to.path);
-        await navigateTo('/users/me/login');
+        return await navigateTo('/users/me/login');
     }
 });
