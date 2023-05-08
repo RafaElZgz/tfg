@@ -1,0 +1,30 @@
+{
+    "name": "tfg",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "start": "cd api && sudo docker compose up -d && cd .. && nuxt dev"
+    },
+    "devDependencies": {
+        "@nuxtjs/tailwindcss": "^6.6.5",
+        "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/typography": "^0.5.9",
+        "nuxt": "*",
+        "nuxt-directus": "^5.1.2",
+        "nuxt-icon": "^0.3.3",
+        "sass": "^1.62.0"
+    },
+    "dependencies": {
+        "@directus/sdk": "^10.3.3",
+        "@pinia/nuxt": "^0.4.8",
+        "preline": "^1.8.0",
+        "vue-sonner": "^0.3.1"
+    }
+}
