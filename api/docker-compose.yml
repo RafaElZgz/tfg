@@ -50,6 +50,8 @@ services:
             ADMIN_PASSWORD: 'tfgdaw'
 
             REFRESH_TOKEN_COOKIE_NAME: 'auth_refresh_token'
+            REFRESH_TOKEN_COOKIE_SAME_SITE: 'none'
+            REFRESH_TOKEN_COOKIE_SECURE: 'true'
 
             CORS_ENABLED: 'true'
             CORS_ORIGIN: 'true'
