@@ -72,7 +72,7 @@ notifications.forEach((notification) => {
                 data-hs-overlay="#sidebar"
                 aria-controls="sidebar"
                 aria-label="Abrir navegación lateral"
-                class="p-2 mr-5 -ml-1 border rounded-md shadow-md lg:hidden focus:bg-yellow-500 focus:text-yellow-800">
+                class="p-2 mr-5 -ml-1 text-gray-300 border-4 border-gray-300 rounded-md shadow-md bg-slate-600 lg:hidden focus:bg-yellow-800 focus:text-yellow-500 focus:border-yellow-500">
                 <ClientOnly>
                     <Icon name="ri:menu-fill" class="w-6 h-6 -mt-1" />
                 </ClientOnly>
@@ -85,7 +85,7 @@ notifications.forEach((notification) => {
                 <li class="relative inline-flex hs-dropdown">
                     <button
                         id="dropdown-notifications"
-                        class="relative align-middle bg-gray-300 rounded-full shadow-md text-slate-600 hs-dropdown-toggle focus:bg-yellow-500 focus:text-yellow-800 hover:text-slate-600/80"
+                        class="relative align-middle bg-gray-300 rounded-full shadow-md border-gray-400/20 text-slate-600 hs-dropdown-toggle focus:bg-yellow-500 focus:text-yellow-800 hover:text-slate-600/80"
                         aria-label="Abrir notificaciones"
                         aria-haspopup="true">
                         <ClientOnly>
@@ -142,7 +142,7 @@ notifications.forEach((notification) => {
                 <li class="relative inline-flex hs-dropdown">
                     <button
                         id="dropdown-avatar"
-                        class="shadow-md flex p-1.5 pr-6 space-x-3 align-middle bg-gray-300/80 rounded-full hs-dropdown-toggle focus:saturate-0"
+                        class="shadow-md flex p-1.5 pr-6 space-x-3 align-middle bg-gray-300/80 rounded-full hs-dropdown-toggle focus:saturate-0 border border-gray-400/20"
                         aria-label="Abrir opciones cuenta"
                         aria-haspopup="true">
                         <img
